@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@layer components {
+    .btn-orange {
+        @apply bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-800 text-white;
+    }
+    .btn-blue {
+        @apply bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white;
+    }
+    .btn-pink {
+        @apply bg-gradient-to-r from-pink-500 to-pink-700 hover:from-pink-600 hover:to-pink-800 text-white;
+    }
+
+    .section {
+        @apply shadow-lg border-t border-gray-200 shadow-gray-300 mix-blend-normal my-4 p-4;
+    }
+}
+
+.bg-darkblue {
+    background: linear-gradient(to right, #18184a, #19398a, #181f58);
+}
+
+.bg-RR {
+    background-color: #ea1a85;
+}
+
+.bg-RCB {
+    background-color: #0a0a0a;
+}
+
+.bg-GT {
+    background-color: #0b4973;
+}
+
+.bg-LSG {
+    background-color: #a6144f;
+}
+
+.bg-SRH {
+    background-color: #f26522;
+}
+
+.bg-PBKS {
+    background-color: #84171b;
+}
+
+.bg-MI {
+    background-color: #003b7a;
+}
+
+.bg-DC {
+    background-color: #0078bc;
+}
+
+.bg-CSK {
+    background-color: #f4ad00;
+}
+
+.bg-KKR {
+    background-color: #552792;
+}
